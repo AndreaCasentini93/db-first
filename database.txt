@@ -1,0 +1,29 @@
+Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario.
+
+Nome Tabella: cars
+
+id - integer - 
+targa - string -
+modello - string - 
+immagine - string - 
+colore - string -
+posizione_motore - string -
+trazione - string -
+peso_kg - integer - 
+lunghezza_mm - integer -
+larghezza_mm - integer - 
+altezza_mm - integer - 
+posti_passeggeri - integer - 
+marce - integer - 
+motore - string - 
+cilindrata_l - float - 
+potenza_kW - integer -
+cambio_automatico - boolean - 
+pneumatici - string -
+cerchi_in_lega - boolean - 
+velocità_km/h - integer - 
+accelerazione_sec - float - 
+consumo_l/100km - float -
+chilometri_percorsi_km - float - 
+anno_immatricolazione - date - 
+prezzo_euro - float - 
