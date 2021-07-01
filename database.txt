@@ -2,7 +2,7 @@ Nome Tabella: used_cars
 
 
 
-id - integer - TINYINT - 
+id - integer - TINYINT - PRIMARY KEY - AUTO_INCREMENT
 
 targa - string - TINYINT - 
 
@@ -30,7 +30,7 @@ marce - integer - TINYINT -
 
 motore - string - 
 
-cilindrata_l - float - 
+cilindrata_l - float - FLOAT(2,1) - 
 
 potenza_kW - integer - TINYINT - 
 
@@ -42,12 +42,12 @@ cerchi_in_lega - boolean -
 
 velocità_km/h - integer - SMALL - 
 
-accelerazione_sec - float - 
+accelerazione_sec - float - FLOAT(2,1) - 
 
-consumo_l/100km - float -
+consumo_l/100km - float - FLOAT(4,1) - 
 
-chilometri_percorsi_km - float - 
+chilometri_percorsi_km - integer - MEDIUMINT - 
 
 anno_immatricolazione - date - 
 
-prezzo_euro - float - 
+prezzo_euro - float - FLOAT - (9,2)
