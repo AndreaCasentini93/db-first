@@ -6,15 +6,15 @@ id - integer - TINYINT - PRIMARY KEY - AUTO_INCREMENT
 
 targa - string - TINYINT - 
 
-modello - string - 
+modello - string - VARCHAR(200) - 
 
-immagine - string - 
+immagine - string - TEXT - 
 
-colore - string -
+colore - string - VARCHAR(150) - 
 
-posizione_motore - string -
+posizione_motore - string - VARCHAR(50) - 
 
-trazione - string -
+trazione - string - VARCHAR(20) - 
 
 peso_kg - integer - MEDIUMINT - 
 
@@ -28,7 +28,7 @@ posti_passeggeri - integer - TINYINT -
 
 marce - integer - TINYINT - 
 
-motore - string - 
+motore - string - VARCHAR(50) - 
 
 cilindrata_l - float - FLOAT(2,1) - 
 
@@ -36,7 +36,7 @@ potenza_kW - integer - TINYINT -
 
 cambio_automatico - boolean - 
 
-pneumatici - string - 
+pneumatici - string - VARCHAR(100) - 
 
 cerchi_in_lega - boolean - 
 
