@@ -1,7 +1,6 @@
 Nome Tabella: used_cars
 
 
-
 id - integer - TINYINT - PRIMARY KEY - AUTO_INCREMENT
 
 targa - string - TINYINT - UNIQUE - NOTNULL
