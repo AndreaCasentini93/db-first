@@ -4,50 +4,70 @@ Nome Tabella: used_cars
 
 id - integer - TINYINT - PRIMARY KEY - AUTO_INCREMENT
 
-targa - string - TINYINT - 
+targa - string - TINYINT - UNIQUE - NOTNULL
 
-modello - string - VARCHAR(200) - 
+modello - string - VARCHAR(200) - NOTNULL
 
-immagine - string - TEXT - 
+prezzo_euro - float - FLOAT(9,2) - NOTNULL
 
-colore - string - VARCHAR(150) - 
+immagine - string - TEXT - NOTNULL
 
-posizione_motore - string - VARCHAR(50) - 
+chilometri_percorsi_km - integer - MEDIUMINT - NOTNULL
 
-trazione - string - VARCHAR(20) - 
+immatricolazione - date - DATE - NOTNULL
 
-peso_kg - integer - MEDIUMINT - 
+scadenza_garanzia - date - DATE - NULL
 
-lunghezza_mm - integer - MEDIUMINT - 
+colore - string - VARCHAR(150) - NOTNULL
 
-larghezza_mm - integer - MEDIUMINT - 
+interni - string - VARCHAR(200) - NULL
 
-altezza_mm - integer - MEDIUMINT - 
+trazione - string - VARCHAR(20) - NOTNULL
 
-posti_passeggeri - integer - TINYINT - 
+posti_passeggeri - integer - TINYINT - NULL
 
-marce - integer - TINYINT - 
+marce - integer - TINYINT - NULL
 
-motore - string - VARCHAR(50) - 
+motore - string - VARCHAR(255) - NOTNULL
 
-cilindrata_l - float - FLOAT(2,1) - 
+velocità_km/h - integer - SMALL - NULL
 
-potenza_kW - integer - TINYINT - 
+accelerazione_sec - float - FLOAT(2,1) - NULL
 
-cambio_automatico - boolean - 
+consumo_l/100km - float - FLOAT(4,1) - NOTNULL
 
-pneumatici - string - VARCHAR(100) - 
+cilindrata_l - float - FLOAT(2,1) - NOTNULL
 
-cerchi_in_lega - boolean - 
+potenza_kW - integer - TINYINT - NOTNULL
 
-velocità_km/h - integer - SMALL - 
+posizione_motore - string - VARCHAR(50) - NULL
 
-accelerazione_sec - float - FLOAT(2,1) - 
+peso_kg - integer - MEDIUMINT - NULL
 
-consumo_l/100km - float - FLOAT(4,1) - 
+lunghezza_mm - integer - MEDIUMINT - NULL
 
-chilometri_percorsi_km - integer - MEDIUMINT - 
+larghezza_mm - integer - MEDIUMINT - NULL
 
-anno_immatricolazione - date - 
+altezza_mm - integer - MEDIUMINT - NULL
 
-prezzo_euro - float - FLOAT - (9,2)
+pneumatici - string - VARCHAR(100) - NULL
+
+cerchi_in_lega - boolean - DEFAULT false
+
+cambio_automatico - boolean - DEFAULT false
+
+specchietti_elettrici - boolean - DEFAULT false
+
+abs - boolean - DEFAULT false
+
+chiusura_centralizzata - boolean - DEFAULT false
+
+doppio_airbag - boolean - DEFAULT false
+
+poggiatesta_regolabili - boolean - DEFAULT false
+
+sensori_parcheggio - boolean - DEFAULT false
+
+videocamera_posteriore - boolean - DEFAULT false
+
+alzacristalli_elettrico - boolean - DEFAULT false
